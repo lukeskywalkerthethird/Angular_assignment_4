@@ -1,0 +1,37 @@
+<div class="container game ">
+    <div 
+        class="container"
+        style="text-align: center;">
+        <h1 class="display-1" style="font-size: 50px;">{{ counter }}</h1>
+    </div>
+    <hr>
+    <div class="container"> 
+        <button class="btn btn-primary"
+                (click)="startGame()"
+                [disabled] = "disableStartButton"
+                style="float: left; margin-left:30%;"       
+        >Start</button>
+        <button class="btn btn-danger"
+                (click)="endGame()"
+                [disabled] = "disableStartButton"  
+                style="float: right; margin-right: 30%;"     
+        >Reset</button>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6 odd">
+            <app-odd
+                [tCounter]="counter"
+                [state] = "game"
+            ></app-odd>
+        </div>
+        <div class="col-md-6 even">
+            <app-even
+                [tCounter]="counter"
+                [state] = "game"
+            ></app-even>
+        </div>
+    </div>
+</div>
+
+

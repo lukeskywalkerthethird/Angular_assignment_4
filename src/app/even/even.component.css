@@ -1,0 +1,17 @@
+.counterDisplay{
+    margin-top: 5%;
+    text-align: center;
+    border:  solid grey;
+    border-radius: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.evenValuesDisplay{
+    font-size: large;
+    color: whitesmoke;
+    border-radius: 0px 0px 15px 0px;
+    background-color: blue;
+    padding-left: 5%;
+    word-wrap: break-word;
+}

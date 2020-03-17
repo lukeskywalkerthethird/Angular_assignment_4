@@ -1,0 +1,17 @@
+.game{
+    border:  solid grey;
+    border-radius: 18px;
+}
+.odd{
+    border-top: solid;
+    border-right: solid;
+    border-color: gainsboro;
+    border-radius: 0px 0px 0px 17px;
+}
+
+.even{
+    border-top: solid;
+    border-left: solid;
+    border-color: gainsboro;
+    border-radius: 0px 0px 17px 0px;
+}

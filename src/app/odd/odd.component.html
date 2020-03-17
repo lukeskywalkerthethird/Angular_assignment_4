@@ -1,0 +1,27 @@
+<h3>
+    ODD <br>
+    VALUES
+</h3>
+<hr>
+<div class="counterDisplay">
+
+    <h1
+        *ngIf ="tCounter%2 != 0; else odd"
+    > {{ tCounter }} </h1>
+
+    <ng-template
+        #odd
+    >
+        <h1> {{ (tCounter-1) }} </h1>
+    </ng-template>
+
+</div>
+
+<div 
+    class="row oddValuesDisplay"
+    *ngIf="state === 'gameOver'"
+    >
+    <span>
+        {{ oddValues }}
+    </span>
+</div>

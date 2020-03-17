@@ -1,0 +1,26 @@
+<h3>
+    EVEN <br>
+    VALUES
+</h3>
+<hr>
+<div class="counterDisplay">
+    <h1
+        *ngIf ="tCounter%2 == 0; else even"
+    > {{ tCounter }} </h1>
+
+    <ng-template
+        #even
+    >
+        <h1> {{ (tCounter-1) }} </h1>
+    </ng-template>
+
+</div>
+
+<div 
+    class="row evenValuesDisplay"
+    *ngIf="state === 'gameOver'"
+    ><span>
+        {{ evenValues }} 
+    </span>
+</div>
+
